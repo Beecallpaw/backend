@@ -3,11 +3,11 @@ const Tier = require('../models/tier');
 
 const getServices = async function () {
     try {
-        var services = await Service.find({})
+        const services = await Service.find({})
         return services;
     } catch (e) {
         // Log Errors
-        throw Error('Error while fetching services')
+        throw Error('Error while fetching services.')
     }
 }
 
@@ -27,7 +27,7 @@ const getServiceDetails = async (slug) => {
         return finalData;
         
     } catch (e) {
-        throw Error("Error while fectching details")
+        throw Error("Error while fectching details.")
     }
 };
 

@@ -2,7 +2,6 @@ const Service = require("../services/service")
 
 const getServices = async (req, res) => {
     let services = await Service.getServices();
-    console.log(services)
     if (!services) {
         return res
             .status(404)
