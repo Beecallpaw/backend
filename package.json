@@ -5,7 +5,11 @@
   "author": "bikalpa",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install"
+  },
+  "engines": {
+    "node": "14.19.1"
   },
   "dependencies": {
     "cors": "^2.8.5",
